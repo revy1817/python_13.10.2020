@@ -5,7 +5,7 @@ def divide(x, y):
             return result
         except ZeroDivisionError:
             print("Делить на 0 НЕЛЬЗЯ!")
-            y = int(input("Введите делитель не равный нулю! \n"))
+            y = float(input("Введите делитель не равный нулю! \n"))
 
 
 while True:
