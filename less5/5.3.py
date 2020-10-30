@@ -1,4 +1,4 @@
-with open("5.3_TextFile.txt", "r") as worker_salary:
+with open("5.3_TextFile.txt", "r", encoding="UTF-8") as worker_salary:
     salary = 0
     worker = 0
     for line in worker_salary:
