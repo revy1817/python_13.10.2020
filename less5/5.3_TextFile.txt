@@ -1,0 +1,6 @@
+Ivanov - 34030
+Petrov - 45310
+Kandrashov - 123010
+Bashirova - 17500
+Glyshkova - 12300
+Sapozhnikov - 7500
