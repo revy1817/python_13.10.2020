@@ -24,11 +24,14 @@ class Cell:
     def make_order(self, max_cell):
         line = self.cells // max_cell
         residue = self.cells % max_cell
-        print(("*" * max_cell + "\n") * line + ("*" * residue))
+        if residue != 0:
+            print(("*" * max_cell + "\n") * line + ("*" * residue))
+        else:
+            print(("*" * max_cell + "\n") * line)
 
 
 if __name__ == "__main__":
-    a = Cell(16)
+    a = Cell(15)
     b = Cell(9)
     c = a / b
     a.make_order(4)
