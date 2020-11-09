@@ -25,13 +25,14 @@ class Cell:
         line = self.cells // max_cell
         residue = self.cells % max_cell
         if residue != 0:
-            print(("*" * max_cell + "\n") * line + ("*" * residue))
+            result = ("*" * max_cell + "\n") * line + ("*" * residue)
         else:
-            print(("*" * max_cell + "\n") * line)
+            result = ("*" * max_cell + "\n") * line
+        return result
 
 
 if __name__ == "__main__":
     a = Cell(15)
     b = Cell(9)
     c = a / b
-    a.make_order(4)
+    print(a.make_order(4))
